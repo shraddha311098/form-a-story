@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Design of a story</title>
+	<style>
+		#section{
+			font-size: 22px;
+			font-family: arial;
+			margin-bottom: 5px;
+		}
+		.allhead{
+			 background-image: linear-gradient(to right,#cccccc, #f2f2f2);
+             padding: 10px;
+             margin-left: auto;
+             margin-right: auto;
+             border-radius: 15px;
+             width: 90%;   
+		}
+		#section1{
+			text-align: center;
+			background-color: seagreen; 
+            border-radius: 15px;
+            width:90%;
+            margin-left: auto;
+            margin-right: auto; 
+            margin-top: 20px;
+            padding-top: 25px;
+		}
+		input{
+			border:none;
+			background-color: inherit;
+			border-bottom: 1px solid white;
+			border-size:30px;
+			font-size: 16px;
+		}
+		::placeholder{
+			color: white;
+			text-align: center;
+			font-size: 15px;
+		}
+		label{
+			font-size: 20px;
+		}
+		body{
+			text-align: center;
+		}
+		#footer{
+			text-align: center;
+			margin-top: 10px;
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 10px;
+			border-radius: 15px;
+
+		}
+		#button{
+			background-color: green;
+			width: 50%;
+			height: 40px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			border-radius: 15px;
+		}
+		h1{
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+		p{
+			margin-top: -20px;
+		}
+		textarea{
+			border:none;
+			background-color: inherit;
+			border-bottom: 1px solid white;
+		}
+		img:hover{
+             opacity: 0.3;
+		}
+		img{
+			transition: opacity 2s ease-in-out;
+		}
+		
+	</style>
+	<header class="allhead">
+	<div align="center" height="80px" weight="auto">
+    <img src="/home/cedcoss/Desktop/task/logobook.png" alt="logo of a story" height="100px" width="auto">
+    </div>
+    <div id="section" align="center"><h1>Form a story</h1><br><p>Fill your dream characters</p></div>
+    </header>
+    </head>
+    <body>
+    <div id="section1">
+    	<form >
+         	<label for="animal-1">Animal:</label><br><br>
+         	<input id="animal-1" type="text" name="animal-1" placeholder="your favorite animal"required><br><br><br>
+      
+            <label for="animal-2">Another animal</label><br><br>
+            <input type="text" name="animal-2" id="animal-2" placeholder="your another favorite animal"required><br><br><br>
+           
+            <label for="animal-3">one more animal</label><br><br>
+            <input type="text" name="animal-3" id="animal-3" placeholder="one more animal" required><br><br><br>
+           
+            <label for="adj-1">Adjective(past tense)</label><br><br>
+            <input type="text" name="adj-1" id="adj-1" placeholder="adjective in past tense" required><br><br><br>
+            
+            <label for="verb-1">Verb(ends in -ing):</label><br><br>
+            <input type="text" name="verb-1" id="verb-1" placeholder="ing form of verb"><br><br><br>
+            
+            <label for="num1">Number</label><br><br>
+            <input type="number" name="num1" id="num1" placeholder="put any desired no." required><br><br><br>
+            
+            <span>Yes or No:</span>
+             <input type="radio" name="answer" value="yes" id="yes" required>
+             <label for="yes">Yes</label>
+             <input type="radio" name="answer" id="no" value="no" required>
+             <label for="no">No</label><br><br><br>
+             
+             <label>Relative speed(ends in -er):</label><br><br><br>
+             <select id="speed" name="speed" required>
+             	<option value="faster">Quiker</option>
+             	<option value="quiker">Slower</option>
+             </select><br><br><br>
+            
+             <label for="quote">Motivational quote</label><br><br>
+             <input type="text" id="quote" name="quote" list="quote-choices" placeholder="Example" required><br><br><br>
+             
+             
+             <label for="message">Meaningful Message:</label><br><br>
+             <textarea id="message" name="message" rows="8" cols="40" placeholder="This is Meaningful area"></textarea><br><br>
+             
+        </form>
+    </div>
+    <footer>
+    	<div id="footer">
+    	<input type="submit" id="button" value="Form my Story!">
+    	</div>
+    </footer>
+</body>
+</html>
